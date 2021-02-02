@@ -15,7 +15,7 @@ const reducer = (state = initialState, action) => {
       };
     case "ADD_MOVIE":
       const { newMovie } = action.payload;
-      newMovie.id = state.movie[state.movies.length - 1].id + 1;
+      newMovie.id = state.movies[state.movies.length - 1].id + 1;
       return {
         ...state,
         movies: [...state.movies, newMovie],
