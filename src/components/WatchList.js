@@ -1,11 +1,10 @@
 import SearchBar from "./SearchBar";
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import AddButton from "./buttons/AddButton";
+import movies from "../movies";
 
 const MovieList = () => {
   const [query, setQuery] = useState("");
-  const movieList = useSelector((state) => state.movies)
+  const movieList = movies
     .filter((movie) => movie.name.toLowerCase().includes(query.toLowerCase()))
     .map((movie) => <p> {movie.name} </p>);
 
@@ -13,7 +12,6 @@ const MovieList = () => {
     <div>
       <SearchBar setQuery={setQuery} />
       {movieList}
-      <AddButton />
     </div>
   );
 };
