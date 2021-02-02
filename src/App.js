@@ -1,24 +1,15 @@
+<<<<<<< HEAD
 import logo from "./logo.svg";
 import "./App.css";
 import movies from "./movies";
+=======
+import WatchList from "./components/WatchList";
+>>>>>>> 783560861a3d57c6e484fbf35c042fd281dbd7d2
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WatchList />
     </div>
   );
 }
