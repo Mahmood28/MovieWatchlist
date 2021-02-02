@@ -1,15 +1,18 @@
-<<<<<<< HEAD
-import logo from "./logo.svg";
-import "./App.css";
-import movies from "./movies";
-=======
 import WatchList from "./components/WatchList";
->>>>>>> 783560861a3d57c6e484fbf35c042fd281dbd7d2
+import Watched from "./components/Watched";
 
 function App() {
   return (
-    <div className="App">
-      <WatchList />
+    <div className="container">
+      <div class="row">
+        <div className="col-6">
+          <WatchList />
+        </div>
+
+        <div className="col-6">
+          <Watched />
+        </div>
+      </div>
     </div>
   );
 }
