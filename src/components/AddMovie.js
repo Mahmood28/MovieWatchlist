@@ -6,11 +6,7 @@ const AddMovie = () => {
   const dispatch = useDispatch();
   const [movie, setMovie] = useState({
     name: "",
-<<<<<<< HEAD
-    image: "",
-=======
     watched: false,
->>>>>>> f139da51899db02d58252f5d1176a5ecd68d3e15
   });
   console.log(movie.watched);
   const handleChange = (event) => {
@@ -19,11 +15,7 @@ const AddMovie = () => {
   const resetForm = () => {
     setMovie({
       name: "",
-<<<<<<< HEAD
-      image: "",
-=======
       watched: false,
->>>>>>> f139da51899db02d58252f5d1176a5ecd68d3e15
     });
   };
 

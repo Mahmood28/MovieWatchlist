@@ -1,15 +1,9 @@
 import SearchBar from "./SearchBar";
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import movies from "../movies";
+import { useSelector, useDispatch } from "react-redux";
 import DeleteButton from "./buttons/DeleteButton";
-<<<<<<< HEAD
-import AddMovie from "./AddMovie";
-
-=======
-import { useDispatch } from "react-redux";
 import { updateMovie } from "../store/action";
->>>>>>> f139da51899db02d58252f5d1176a5ecd68d3e15
+
 const Watched = () => {
   const [query, setQuery] = useState("");
   const dispatch = useDispatch();
