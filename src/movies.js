@@ -2,22 +2,22 @@ const movies = [
   {
     id: 1,
     name: "Uncut Gems",
-    image: null,
+    watched: false,
   },
   {
     id: 2,
     name: "The Mask",
-    image: null,
+    watched: false,
   },
   {
     id: 3,
     name: "Child's Play",
-    image: null,
+    watched: false,
   },
   {
     id: 4,
     name: "Avengers",
-    image: null,
+    watched: false,
   },
 ];
 

@@ -1,3 +1,7 @@
+import logo from "./logo.svg";
+import "./App.css";
+import movies from "./movies";
+
 import WatchList from "./components/WatchList";
 import Watched from "./components/Watched";
 
