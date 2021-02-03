@@ -6,6 +6,7 @@ const AddMovie = () => {
   const dispatch = useDispatch();
   const [movie, setMovie] = useState({
     name: "",
+    image: "",
   });
 
   const handleChange = (event) => {
@@ -14,6 +15,7 @@ const AddMovie = () => {
   const resetForm = () => {
     setMovie({
       name: "",
+      image: "",
     });
   };
 

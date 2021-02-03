@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import movies from "../movies";
 import DeleteButton from "./buttons/DeleteButton";
+import AddMovie from "./AddMovie";
 
 const Watched = () => {
   const [query, setQuery] = useState("");
@@ -25,7 +26,9 @@ const Watched = () => {
     <div className="card">
       <h5 class="card-title">Watched</h5>
       <SearchBar setQuery={setQuery} />
-      <ul className="list-group list-group-flush">{movieList}</ul>
+      <ul className="list-group list-group-flush">
+        {query ? "No movie found" : movieList}
+      </ul>
     </div>
   );
 };
